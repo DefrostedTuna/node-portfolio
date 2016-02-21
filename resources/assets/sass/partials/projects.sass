@@ -1,0 +1,108 @@
+//==================
+// Projects Section
+
+.projects-container
+  overflow: hidden
+  hr
+    margin: auto
+    margin-top: 0.5em
+    max-width: 90%
+    box-shadow: 0px -1px 3px rgba($ut-color-medium-gray, 0.9)
+    border-color: lighten($ut-paragraph-color, 30%)
+
+
+.projects-wrap
+  padding: 0.5em
+  text-align: center
+  z-index: 1
+  max-width: 1200px
+  margin: auto
+@media screen and (max-width: 650px)
+  .projects-wrap
+    padding-bottom: 3em
+
+.project-container.left-side
+  float: left
+
+.project-container.right-side
+  float: right
+  text-align: right
+
+.project-container
+  position: relative
+  text-align: left
+  max-width: 40em
+  margin-top: 3em
+  margin-bottom: 3em
+@media screen and (max-width: 650px)
+  .project-container
+    margin: 3em auto
+    float: none !important
+    text-align: center !important
+
+
+
+.project-arrow-right.open,
+.project-arrow-left.open
+  i
+    transform: rotate(180deg)
+
+.project-arrow-right
+  position: absolute
+  top: 50%
+  right: -15%
+  transform: translateY(-50%)
+  &:hover
+    cursor: pointer
+  i
+    transition: all ease 0.5s
+.project-arrow-left
+  position: absolute
+  top: 50%
+  left: -15%
+  transform: translateY(-50%)
+  &:hover
+    cursor: pointer
+  i
+    transition: all ease 0.5s
+@media screen and (max-width: 650px)
+  .project-arrow-right,
+  .project-arrow-left
+    top: auto
+    right: auto
+    bottom: -15%
+    left: 50%
+    transform: translateX(-50%)
+
+
+
+
+
+
+
+
+.project-slide-container
+  overflow: hidden
+
+.project-slide-wrap.open
+  left: -100%
+
+.project-slide-wrap
+  position: relative
+  left: 0
+  min-width: 200%
+  transition: left ease 1s
+  .project-slide
+    display: inline-block
+    width: 50%
+    height: 100%
+    float: left
+    div
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 50%
+      text-align: center
+    img
+      width: 6em
+      margin: auto 1em
