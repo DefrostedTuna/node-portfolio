@@ -11,28 +11,15 @@
 </head>
 <body>
 <div class="root-body">
-<div class="header-container">
-  <div class="header-bg">
-    <div class="header-bg-fc">
-      <div class="header-bg-f1"></div>
-      <div class="header-bg-f2"></div>
-    </div>
-  </div>
+<div class="header-container"> <!-- Header -->
+  <div class="header-bg"></div>
   <div class="header-wrap">
-    <div class="header-nav">
-      <ul>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-        <li>Link 4</li>
-      </ul>
-    </div>
     <div class="header-nq clearfix">
       <h1>Rick Bennett</h1>
       <p>"Code like whoever ends up maintaining your code is a serial killer who knows where you live."</p>
     </div>
   </div>
-</div>
+</div> <!-- Header -->
 <div class="content-wrapper">
   <div class="about-me-container"> <!-- About Me -->
     <div class="about-me-wrap">
@@ -49,7 +36,7 @@
             <img src="/assets/uptilt.io/img/data2.svg" alt="Data" class="wow bounceInRight" />
             <div class="wow fadeInLeft">
               <h4>I like working with data</h4>
-              <p>Give me something to sift through and I'll have it done in no time. <br /> I never get tired of analyzing stuff.</p>
+              <p>Give me something to sift through and I'll have it organized in no time. <br /> I never get tired of analyzing stuff.</p>
             </div>
           </div>
         </div>
@@ -57,15 +44,25 @@
           <div class="detail-2">
             <img src="/assets/uptilt.io/img/simple2.svg" alt="Simple" class="wow bounceInLeft" />
             <div class="wow fadeInRight">
-              <h4>Simplicity is a thing</h4>
-              <p>I'm not a fan of clutter, so most everything I make is going to be straight to the point with everything needed.</p>
+              <h4>Minimalism is my thing</h4>
+              <p>Nobody likes clutter, myself included. What you are looking for should be exactly where you expect it, without unnecessary distractions.</p>
+              <!--<p>I'm not a fan of clutter, so most everything I make is going to be straight to the point with everything needed.</p>-->
             </div>
           </div>
         </div>
         <div class="clearfix">
           <div class="detail-3">
-            <img src="/assets/uptilt.io/img/learn.svg" alt="Learn" class="wow bounceInRight" />
+            <img src="/assets/uptilt.io/img/modular.svg" alt="Learn" class="wow bounceInRight" />
             <div class="wow fadeInLeft">
+              <h4>Modularity in all</h4>
+              <p>If a feature change breaks your application, you're doing it wrong. <br /> A modular application is a stable one.</p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="detail-4">
+            <img src="/assets/uptilt.io/img/learn.svg" alt="Learn" class="wow bounceInLeft" />
+            <div class="wow fadeInRight">
               <h4>Always looking to learn more</h4>
               <p>I'm always up for a challenge, that's the best part about what I do. <br />
               There's always something new to learn.</p>
@@ -73,7 +70,7 @@
           </div>
         </div>
       </div>
-      <div class="detail-4">
+      <div class="detail-5">
         <img src="/assets/uptilt.io/img/checklist.svg" alt="Learn" class="wow bounceInDown" />
 
         <div class="detail-drop wow fadeInUp">
@@ -103,7 +100,7 @@
             </div>
           </div>
         </div>
-        <span class="project-arrow-right wow fadeIn"><i class="fa fa-3x fa-arrow-circle-right"></i></span>
+        <span class="project-arrow-right wow fadeIn"><i id="project-1-arrow" class="fa fa-3x fa-arrow-circle-right"></i></span>
       </div> <!-- FFXIV -->
       <div class="project-container wow slideInRight right-side"> <!-- CSS Baseline -->
         <div class="project-slide-container">
@@ -120,7 +117,7 @@
             </div>
           </div>
         </div>
-        <span class="project-arrow-left wow fadeIn"><i class="fa fa-3x fa-arrow-circle-left"></i></span>
+        <span class="project-arrow-left wow fadeIn"><i id="project-2-arrow" class="fa fa-3x fa-arrow-circle-left"></i></span>
       </div> <!-- CSS Baseline -->
       <div class="project-container wow slideInLeft left-side"> <!-- Image Upload -->
         <div class="project-slide-container">
@@ -137,7 +134,7 @@
             </div>
           </div>
         </div>
-        <span class="project-arrow-right wow fadeIn"><i class="fa fa-3x fa-arrow-circle-right"></i></span>
+        <span class="project-arrow-right wow fadeIn"><i id="project-3-arrow" class="fa fa-3x fa-arrow-circle-right"></i></span>
       </div> <!-- Image Upload -->
     </div>
   </div> <!-- Projects -->
