@@ -1,2 +1,52 @@
-.contact
-  display: none
+.contact-container
+  position: relative
+  box-shadow: 0px -3px 5px rgba($ut-color-medium-gray, 0.6)
+  background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png)
+  hr:last-child
+    margin-bottom: 0
+
+.footer-wrap
+  padding-bottom: 2em
+  text-align: center
+  color: rgba($ut-color-medium-gray, 0.5)
+  hr
+    border-color: rgba($ut-color-medium-gray, 0.5)
+    max-width: 1000px
+    margin-left: auto
+    margin-right: auto
+  p
+    color: $ut-color-white
+.contact-bg
+  position: absolute
+  height: 100%
+  width: 100%
+
+  filter: brightness(100%)
+
+  z-index: -1
+
+.contact-wrap
+  padding: 0.5em
+  text-align: center
+  max-width: 1200px
+  margin: auto
+  h1
+    color: $ut-color-white
+    text-shadow: 2px 2px 2px rgba($ut-color-black, 0.9)
+    text-transform: none
+  p
+    color: $ut-color-white
+    text-shadow: 2px 2px 2px rgba($ut-color-black, 0.9)
+.contact-form-wrap
+  text-align: left
+  padding: 1em
+  max-width: 900px
+  margin: auto
+  color: white
+
+
+.contact-submit-button
+  +ut-button-setup()
+  +ut-button-shape(round)
+  +ut-button-style(flat, #32BEA6)
+  width: 100%

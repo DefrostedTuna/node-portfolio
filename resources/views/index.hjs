@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Rick Bennett :: Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- for mobile, yo -->
     <!-- Stylesheets -->
@@ -14,6 +14,7 @@
 <div class="header-container"> <!-- Header -->
   <div class="header-bg"></div>
   <div class="header-wrap">
+    <span class="resume-link-header wow bounceInDown"><a href="#">Link to resume (PDF)</a></span>
     <div class="header-nq clearfix">
       <h1>Rick Bennett</h1>
       <p>"Code like whoever ends up maintaining your code is a serial killer who knows where you live."</p>
@@ -30,9 +31,9 @@
         <p><strong>Let's keep it simple.</strong><br /> I'm just a guy who likes to make things.<br />
         <small>(That's not really me by the way)</small></p>
       </div>
-      <div class="clearfix">
+      <div class="about-float-wrap clearfix">
         <div class="clearfix">
-          <div class="detail-1">
+          <div class="detail-block detail-block-right">
             <img src="/assets/uptilt.io/img/data2.svg" alt="Data" class="wow bounceInRight" />
             <div class="wow fadeInLeft">
               <h4>I like working with data</h4>
@@ -41,7 +42,7 @@
           </div>
         </div>
         <div class="clearfix">
-          <div class="detail-2">
+          <div class="detail-block detail-block-left">
             <img src="/assets/uptilt.io/img/simple2.svg" alt="Simple" class="wow bounceInLeft" />
             <div class="wow fadeInRight">
               <h4>Minimalism is my thing</h4>
@@ -51,7 +52,7 @@
           </div>
         </div>
         <div class="clearfix">
-          <div class="detail-3">
+          <div class="detail-block detail-block-right">
             <img src="/assets/uptilt.io/img/modular.svg" alt="Learn" class="wow bounceInRight" />
             <div class="wow fadeInLeft">
               <h4>Modularity in all</h4>
@@ -60,7 +61,7 @@
           </div>
         </div>
         <div class="clearfix">
-          <div class="detail-4">
+          <div class="detail-block detail-block-left">
             <img src="/assets/uptilt.io/img/learn.svg" alt="Learn" class="wow bounceInLeft" />
             <div class="wow fadeInRight">
               <h4>Always looking to learn more</h4>
@@ -70,11 +71,10 @@
           </div>
         </div>
       </div>
-      <div class="detail-5">
-        <img src="/assets/uptilt.io/img/checklist.svg" alt="Learn" class="wow bounceInDown" />
-
-        <div class="detail-drop wow fadeInUp">
-          <h3 class="the-details"><!--<i class="fa fa-arrow-right"></i>--> The details <!--<i class="fa fa-arrow-left"></i>--></h3>
+      <div class="the-details">
+        <img src="/assets/uptilt.io/img/checklist.svg" alt="Learn" class="wow fadeInDown" />
+        <div class="wow fadeInUp">
+          <h3 class=""><!--<i class="fa fa-arrow-right"></i>--> The details <!--<i class="fa fa-arrow-left"></i>--></h3>
           <p>A couple of years ago I decided to give web development a shot. I picked up the basics; HTML, CSS and Javascript, then moved into PHP as what I consider my main language. Since then I've taken a liking to the Laravel framework, building most of my projects on Laravel 4 and 5. Recently I started looking into NodeJS and so far I'm really enjoying it. It's probably safe to say that my next few projects will be built on that.</p>
         </div>
       </div>
@@ -86,30 +86,30 @@
     <div class="projects-wrap">
       <h1 class="wow fadeIn">Some of the stuff I've done</h1>
       <div class="project-container wow slideInLeft left-side"> <!-- FFXIV -->
-        <div class="project-slide-container">
-          <div class="project-slide-wrap clearfix">
+        <div class="p-slide-wrap">
+          <div class="p-slides p-slides-left clearfix">
             <div class="project-slide">
-              <h4>FFXIV based homepage replacement</h4>
-              <p>This was a personal project of mine that I ended up expanding on for a couple of friends. Originally it was written in PHP using Laravel 5 (go figure right?). Shorty after getting a demo up, a friend had mentioned something about NodeJS. I figured this was a good project to try out NodeJS with, and have since converted it over while slowly adding things to it. This is currently my personal homepage.</p>
-            </div>
-            <div class="project-slide clearfix">
               <div>
                 <a href="https://github.com/DefrostedTuna/node-landing" target="_blank"><img src="/assets/uptilt.io/img/github.svg" alt="Data" /></a>
                 <a href="http://uptilt.io/landing" target="_blank"><img src="/assets/uptilt.io/img/link.svg" alt="Data" /></a>
               </div>
+            </div>
+            <div class="project-slide">
+              <h4>FFXIV based homepage replacement</h4>
+              <p>This was a personal project of mine that I ended up expanding on for a couple of friends. Originally it was written in PHP using Laravel 5 (go figure right?). Shorty after getting a demo up, a friend had mentioned something about NodeJS. I figured this was a good project to try out NodeJS with, and have since converted it over while slowly adding things to it. This is currently my personal homepage.</p>
             </div>
           </div>
         </div>
         <span class="project-arrow-right wow fadeIn"><i id="project-1-arrow" class="fa fa-3x fa-arrow-circle-right"></i></span>
       </div> <!-- FFXIV -->
       <div class="project-container wow slideInRight right-side"> <!-- CSS Baseline -->
-        <div class="project-slide-container">
-          <div class="project-slide-wrap clearfix">
+        <div class="p-slide-wrap">
+          <div class="p-slides p-slides-right clearfix">
             <div class="project-slide">
               <h4>Baseline Styleset</h4>
               <p>I got super tired of having to style everything from scratch with every new project. I didn't particularly want to use a hefty front end framework like Bootstrap or Foundation as most of the things wouldn't be used anyway. Solution? Make my own minimalistic styleset that I can use with new projects easily. Best part? It's modular. Use what you want, the rest is only part of the code if you include it.</p>
             </div>
-            <div class="project-slide clearfix">
+            <div class="project-slide">
               <div>
                 <a href="https://github.com/DefrostedTuna/css-base-style" target="_blank"><img src="/assets/uptilt.io/img/github.svg" alt="Data" /></a>
                 <a href="http://demo.uptilt.io/css-base" target="_blank"><img src="/assets/uptilt.io/img/link.svg" alt="Data" /></a>
@@ -120,17 +120,17 @@
         <span class="project-arrow-left wow fadeIn"><i id="project-2-arrow" class="fa fa-3x fa-arrow-circle-left"></i></span>
       </div> <!-- CSS Baseline -->
       <div class="project-container wow slideInLeft left-side"> <!-- Image Upload -->
-        <div class="project-slide-container">
-          <div class="project-slide-wrap clearfix">
+        <div class="p-slide-wrap">
+          <div class="p-slides p-slides-left clearfix">
             <div class="project-slide">
-              <h4>Image upload</h4>
-              <p>I made a pure PHP image upload feature a long time ago when I decided to try and make a blog. However, it was fairly clunky since it was my first attempt. This is an attempt to give image upload functionality a shot with Javascript/JQuery alongside PHP. More of a proof of concept to try what I've learned, although I may decide to try and expand on this at some point.</p>
-            </div>
-            <div class="project-slide clearfix">
               <div>
                 <a href="https://github.com/DefrostedTuna/php-image" target="_blank"><img src="/assets/uptilt.io/img/github.svg" alt="Data" /></a>
                 <a href="http://demo.uptilt.io/image" target="_blank"><img src="/assets/uptilt.io/img/link.svg" alt="Data" /></a>
               </div>
+            </div>
+            <div class="project-slide">
+              <h4>Image upload</h4>
+              <p>I made a pure PHP image upload feature a long time ago when I decided to try and make a blog. However, it was fairly clunky since it was my first attempt. This is an attempt to give image upload functionality a shot with Javascript/JQuery alongside PHP. More of a proof of concept to try what I've learned, although I may decide to try and expand on this at some point.</p>
             </div>
           </div>
         </div>
@@ -138,48 +138,51 @@
       </div> <!-- Image Upload -->
     </div>
   </div> <!-- Projects -->
-  <div class="contact">
-    <h1>Contact Section</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </div>
-</div>
+  <div class="contact-container"> <!-- Contact -->
+    <div class="contact-bg"></div>
+    <div class="contact-wrap">
+      <h1 class="wow fadeInDown">Need to contact me?</h1>
+      <p class="wow fadeInDown">
+        Just fill out a quick form and it'll go straight to me. <br />
+        I'd leave my phone number but well, this <em>is</em> the internet afer all...
+      </p>
+      <div class="contact-form-wrap wow fadeInUp">
+        <form id="contact-form" action="/contact" method="post">
+          <div class="input-field">
+            <label for="form-name">Name</label>
+            <input id="form-name" type="text" name="name" value="" placeholder="Well, I have to know what to call you...">
+          </div>
+          <div class="input-field">
+            <label for="form-email">Email</label>
+            <input id="form-email" type="email" name="email" value="" placeholder="NeedThis@ToRespond.com">
+          </div>
+          <div class="input-field">
+            <label for="form-subject">Subject</label>
+            <input id="form-subject" type="text" name="subject" value="" placeholder="Someting clever here.">
+          </div>
+          <div class="input-field">
+            <label for="form-reason">Reason</label>
+            <textarea id="form-reason" name="reason" rows="8" cols="40" placeholder="I mean this could be whatever you want honestly..."></textarea>
+          </div>
+          <div class="input-field">
+            <button class="contact-submit-button" type="submit" name="submit">Shoot me a message!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-wrap wow fadeIn">
+      <hr>
+      <p>&copy 2016 Rick Bennett</p>
+      <a href="https://github.com/DefrostedTuna">Me @ Github</a> |
+      <a href="#">Resume (PDF)</a> |
+      <a href="">Back to the top</a>
+    </div>
+  </div> <!-- Contact -->
+</div> <!-- Content Container -->
 
-
-<div class="everything-else">
-  <h1>Hello!</h1>
-
-  <div class="quotes">
-    <p>
-      "Code like whoever ends up maintaining your code is a serial killer who knows where you live."
-    </p>
-    <p>
-      Yes. It's actually a <em>thing</em>.
-    </p>
-  </div>
-
-
-  <div class="Projects">
-    <p>
-      Landing.
-    </p>
-    <p>
-      Baseline.
-    </p>
-    <p>
-      Image.
-    </p>
-    <p>
-      Blog.
-    </p>
-    <p>
-      Checklist.
-    </p>
-  </div>
-</div>
-
+<!-- STOP HURR! -->
 </div><!-- root-body-->
+
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> <!-- required -->
 <script src="/assets/uptilt.io/js/compiled.js"></script>

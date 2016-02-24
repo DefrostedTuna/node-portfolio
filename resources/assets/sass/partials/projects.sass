@@ -10,27 +10,23 @@
     box-shadow: 0px -1px 3px rgba($ut-color-medium-gray, 0.9)
     border-color: lighten($ut-paragraph-color, 30%)
 
-
 .projects-wrap
   padding: 0.5em
   text-align: center
   z-index: 1
   max-width: 1200px
   margin: auto
+  h1
+    text-transform: none
 @media screen and (max-width: 650px)
   .projects-wrap
     padding-bottom: 3em
 
-.project-container.left-side
-  float: left
-
-.project-container.right-side
-  float: right
-  text-align: right
+//============
+// Container
 
 .project-container
   position: relative
-  text-align: left
   max-width: 40em
   margin-top: 3em
   margin-bottom: 3em
@@ -40,10 +36,20 @@
     float: none !important
     text-align: center !important
 
+.project-container.left-side
+  float: left
+  text-align: left
+.project-container.right-side
+  float: right
+  text-align: right
+//===================
 
-
-.project-arrow-right.open,
-.project-arrow-left.open
+//========
+// Arrows
+.project-arrow-left.open-right
+  i
+    transform: rotate(-180deg)
+.project-arrow-right.open-left
   i
     transform: rotate(180deg)
 
@@ -80,18 +86,14 @@
   color: #E04F5F
 #project-3-arrow
   color: #25B7D3
+//=======
 
-
-
-
-
-.project-slide-container
+//==============================
+// Slide container and contents
+.p-slide-wrap
   overflow: hidden
 
-.project-slide-wrap.open
-  left: -100%
-
-.project-slide-wrap
+.p-slides
   position: relative
   left: 0
   min-width: 200%
@@ -104,9 +106,21 @@
     div
       position: absolute
       top: 50%
+      //left: -50%
       transform: translateY(-50%)
       width: 50%
       text-align: center
     img
       width: 6em
       margin: auto 1em
+
+.p-slides-left
+  div
+    left: -50%
+.p-slides-left.open-left
+  left: 100%
+.p-slides-right
+  div
+    left: 50%
+.p-slides-right.open-right
+  left: -100%

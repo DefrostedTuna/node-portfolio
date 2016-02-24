@@ -16,6 +16,7 @@
     position: relative
     margin-bottom: 1em
     transition: left ease 1s
+    text-transform: none
 
 .detail-intro
   p:last-child
@@ -25,10 +26,8 @@
     border-radius: 50%
     box-shadow: 2px 2px 5px $ut-color-medium-gray
 
-.detail-1
-  margin: 5em 1em 5em auto
+.detail-block
   padding: 1em 2em
-  text-align: right
   max-width: 40em
   div
     margin-top: 0.5em
@@ -37,109 +36,39 @@
     h4
       margin-top: 0
   img
-    float: right
-    margin-left: 1em
     width: 6em
     border-radius: 50%
     box-shadow: 2px 2px 5px $ut-color-medium-gray
-@media screen and (max-width: 600px)
-  .detail-1
-    float: none
-    text-align: center
-    margin: 2em auto 2em auto
-    div
-    img
-      float: none
-      margin: 0 0 1em 0
 
-.detail-2
+.detail-block-left
   margin: 5em auto 5em 1em
-  padding: 1em 2em
   text-align: left
-  max-width: 40em
-  div
-    margin-top: 0.5em
-    p
-      margin-bottom: 0
-    h4
-      display: inline-block
-      margin-top: 0
   img
     float: left
     margin-right: 1em
-    width: 6em
-    border-radius: 50%
-    box-shadow: 2px 2px 5px $ut-color-medium-gray
-@media screen and (max-width: 600px)
-  .detail-2
-    float: none
-    text-align: center
-    margin: 2em auto 2em auto
-    div
-    img
-      float: none
-      margin: 0 0 1em 0
 
-.detail-3
+.detail-block-right
   margin: 5em 1em 5em auto
-  padding: 1em 2em
   text-align: right
-  max-width: 40em
-  div
-    margin-top: 0.5em
-    p
-      margin-bottom: 0
-    h4
-      display: inline-block
-      margin-top: 0
   img
     float: right
     margin-left: 1em
-    width: 6em
-    border-radius: 50%
-    box-shadow: 2px 2px 5px $ut-color-medium-gray
 @media screen and (max-width: 600px)
-  .detail-3
+  .detail-block-left,
+  .detail-block-right
     float: none
     text-align: center
     margin: 2em auto 2em auto
-    div
     img
       float: none
       margin: 0 0 1em 0
 
-.detail-4
-  margin: 5em auto 5em 1em
-  padding: 1em 2em
-  text-align: left
-  max-width: 40em
-  div
-    margin-top: 0.5em
-    p
-      margin-bottom: 0
-    h4
-      display: inline-block
-      margin-top: 0
-  img
-    float: left
-    margin-right: 1em
-    width: 6em
-    border-radius: 50%
-    box-shadow: 2px 2px 5px $ut-color-medium-gray
-@media screen and (max-width: 600px)
-  .detail-4
-    float: none
-    text-align: center
-    margin: 2em auto 2em auto
-    div
-    img
-      float: none
-      margin: 0 0 1em 0
-
-.detail-5
+.the-details
   text-align: center
   margin: auto
   max-width: 40em
+  h3
+    margin-top: 0.25em
   img
     width: 6em
     border-radius: 50%
