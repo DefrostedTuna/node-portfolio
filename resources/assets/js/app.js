@@ -18,6 +18,7 @@ $(function () {
   });
   $('#contact-form').submit(function(e){
     e.preventDefault();
+    $('.form-error').remove();
     // Get form fields
     var data = {};
     data.name     = $('#form-name').val();
@@ -25,64 +26,52 @@ $(function () {
     data.subject  = $('#form-subject').val();
     data.reason    = $('#form-reason').val();
     $.ajax({
-        url : "contact",
+        url : "/contact",
         type: "POST",
         data: JSON.stringify(data),
         processData: false,
         contentType: "application/json",
-        success: function(data){
-          console.log("SUCCESS")
-            //cleanup
-            // remove values from form
-
-            //display flash message
-            // "Email has been sent!" Or something along those lines
-
-
+        success: function(res){
+          // Remove all current values and elements
+          $('#form-name').val('');
+          $('#form-email').val('');
+          $('#form-subject').val('');
+          $('#form-reason').val('');
+          $('.flash-hide-success').remove();
+          // Add confirmation for success
+          $('<div class="flash-hide-success flash-click" />').append('<i class="fa fa-exclamation-triangle"></i> ' + '<p>Your message has been sent! Get back to you soon!</p>').appendTo('.flash-message-wrap');
+          // To show content in DOM (avoids non clickable parts of DOM)
+          $('.flash-message-container').show();
+          // Animate confirmation message
+          $('.flash-message-wrap').addClass('animated fadeInDown').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function() {
+            $('.flash-message-wrap').removeClass('animated fadeInDown');
+          });
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          //console.log(jqXHR.responseJSON);
+          // If the error was a validation issue
+          if(jqXHR.responseJSON['Validation Errors']) {
+            // Loop through each object to obtain the values
+            $.each(jqXHR.responseJSON['Validation Errors'], function(array, key){
+              // Append the error to the corrosponding element
+              $('<small class="form-error">' +
+                  key.msg +
+                '</small>').insertBefore('#form-' + key.param).hide().fadeIn();
+            });
+          }
+          console.log("AJAX form request fail.");
         }
     });
   });
 
-  /*
-  $('#contact-form').submit(function(e){
-    e.preventDefault();
-    $.ajax({
-        url : "contact",
-        type: "POST",
-        data: new FormData(this),
-        processData: false,
-        contentType: false,
-        success: function(data){
-            //cleanup
-            // remove values from form
-
-            //display flash message
-            // "Email has been sent!" Or something along those lines
-
-
-        },
-
-        error: function(jqXHR, textStatus, errorThrown){
-            //cleanup
-            $(".flash-error").remove();
-            $(".selected-file").remove();
-            $(".button-file-select").removeClass("button-file-select-on");
-            //prepend div to top of page
-            $("<div class='flash-error'></div>").prependTo(".main-wrap").hide();
-            $.each($.parseJSON(jqXHR.responseText),function(index, array){
-                $.each(array, function(i, error){
-                    //add each error to the div
-                    $("<p>" + error + "</p>").appendTo(".flash-error");
-                });
-            });
-            //show flash-errors
-            $(".flash-error").fadeIn(1000);
-        }
+  // Dismiss confirmation message on click
+  $('.flash-message-wrap').click(function() {
+    $('.flash-message-wrap').addClass('animated fadeOutUp').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function() {
+      $('.flash-message-wrap').removeClass('animated fadeOutUp');
+      // To regain click functionality
+      $('.flash-message-container').hide();
+      $('.flash-hide-success').remove();
     });
-
-
-
-
-
-  */
+    console.log("Flash Click");
+  });
 });

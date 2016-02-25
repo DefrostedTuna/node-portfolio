@@ -16,6 +16,32 @@ body
 .everything-else
   display: none
 
+.form-error
+  display: inline-block
+  color: $ut-color-red
+  font-weight: bold
+  font-size: 1rem
+
+.flash-message-container
+  position: fixed
+  display: none
+  text-align: center
+  width: 100%
+  top: 5em
+  left: 50%
+  transform: translateX(-50%)
+
+.flash-message-wrap
+  display: inline-block
+  max-width: 90%
+  margin: auto
+
+.flash-hide-success
+  +ut-flash(success)
+  padding: 1em
+  margin: auto
+
+
 @import "partials/header"
 @import "partials/about"
 @import "partials/projects"

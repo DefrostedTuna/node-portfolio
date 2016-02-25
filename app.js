@@ -4,12 +4,16 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var validator = require('express-validator');
 require('./env.js');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+
+// Form validation
+app.use(validator());
 
 // Serve assets. Server side, then locally (for dev). This was dumb...
 app.use("/uptilt.io", express.static(path.join(__dirname, '/public')));

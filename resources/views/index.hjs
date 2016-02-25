@@ -55,7 +55,7 @@
           <div class="detail-block detail-block-right">
             <img src="/assets/uptilt.io/img/modular.svg" alt="Learn" class="wow bounceInRight" />
             <div class="wow fadeInLeft">
-              <h4>Modularity in all</h4>
+              <h4>Modular Everything</h4>
               <p>If a feature change breaks your application, you're doing it wrong. <br /> A modular application is a stable one.</p>
             </div>
           </div>
@@ -144,24 +144,24 @@
       <h1 class="wow fadeInDown">Need to contact me?</h1>
       <p class="wow fadeInDown">
         Just fill out a quick form and it'll go straight to me. <br />
-        I'd leave my phone number but well, this <em>is</em> the internet afer all...
+        I'd leave my phone number but well, this <em>is</em> the internet after all...
       </p>
       <div class="contact-form-wrap wow fadeInUp">
         <form id="contact-form" action="/contact" method="post">
           <div class="input-field">
-            <label for="form-name">Name</label>
+            <label for="form-name" id="label-for-name">Name </label>
             <input id="form-name" type="text" name="name" value="" placeholder="Well, I have to know what to call you...">
           </div>
           <div class="input-field">
-            <label for="form-email">Email</label>
+            <label for="form-email" id="label-for-email">Email </label>
             <input id="form-email" type="email" name="email" value="" placeholder="NeedThis@ToRespond.com">
           </div>
           <div class="input-field">
-            <label for="form-subject">Subject</label>
+            <label for="form-subject" id="label-for-subject">Subject </label>
             <input id="form-subject" type="text" name="subject" value="" placeholder="Someting clever here.">
           </div>
           <div class="input-field">
-            <label for="form-reason">Reason</label>
+            <label for="form-reason" id="label-for-reason">Reason </label>
             <textarea id="form-reason" name="reason" rows="8" cols="40" placeholder="I mean this could be whatever you want honestly..."></textarea>
           </div>
           <div class="input-field">
@@ -179,7 +179,11 @@
     </div>
   </div> <!-- Contact -->
 </div> <!-- Content Container -->
+<div class="flash-message-container">
+  <div class="flash-message-wrap">
 
+  </div>
+</div>
 <!-- STOP HURR! -->
 </div><!-- root-body-->
 

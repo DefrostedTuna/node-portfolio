@@ -254,6 +254,55 @@ body {
 .everything-else {
   display: none; }
 
+.form-error {
+  display: inline-block;
+  color: #E74C3C;
+  font-weight: bold;
+  font-size: 1rem; }
+
+.flash-message-container {
+  position: fixed;
+  display: none;
+  text-align: center;
+  width: 100%;
+  top: 5em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.flash-message-wrap {
+  display: inline-block;
+  max-width: 90%;
+  margin: auto; }
+
+.flash-hide-success {
+  background-color: #e6efc2;
+  color: #788d25;
+  display: block;
+  box-shadow: 0px 0px 5px #d2e292;
+  border: 1px solid #e3edba;
+  margin-bottom: 1em;
+  padding: .25em;
+  text-align: center;
+  border-radius: 2px;
+  padding: 1em;
+  margin: auto; }
+  .flash-hide-success:hover {
+    cursor: pointer;
+    background-color: #e8f0c6;
+    box-shadow: 0px 0px 5px #d7e59e;
+    border: 1px solid #e4eebe;
+    color: #89a12a; }
+  .flash-hide-success p {
+    margin-bottom: 0; }
+    .flash-hide-success p:first-of-type {
+      display: inline-block; }
+  .flash-hide-success a {
+    color: #333c10;
+    text-decoration: underline; }
+    .flash-hide-success a:focus, .flash-hide-success a:hover {
+      color: black; }
+
 .header-container {
   position: relative;
   overflow: hidden;
