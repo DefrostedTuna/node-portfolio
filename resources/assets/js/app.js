@@ -26,7 +26,7 @@ $(function () {
     data.subject  = $('#form-subject').val();
     data.reason    = $('#form-reason').val();
     $.ajax({
-        url : "/contact",
+        url : "/portfolio/contact",
         type: "POST",
         data: JSON.stringify(data),
         processData: false,
