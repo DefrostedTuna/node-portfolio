@@ -251,9 +251,6 @@ body {
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s; }
 
-.everything-else {
-  display: none; }
-
 .form-error {
   display: inline-block;
   color: #E74C3C;
@@ -303,9 +300,38 @@ body {
     .flash-hide-success a:focus, .flash-hide-success a:hover {
       color: black; }
 
+.flash-hide-error {
+  background-color: #fbe3e4;
+  color: #c31c23;
+  display: block;
+  box-shadow: 0px 0px 5px #f3adb0;
+  border: 1px solid #fadadb;
+  margin-bottom: 1em;
+  padding: .25em;
+  text-align: center;
+  border-radius: 2px;
+  padding: 1em;
+  margin: auto; }
+  .flash-hide-error:hover {
+    cursor: pointer;
+    background-color: #fce7e8;
+    box-shadow: 0px 0px 5px #f5bbbd;
+    border: 1px solid #fadfe0;
+    color: #d91f27; }
+  .flash-hide-error p {
+    margin-bottom: 0; }
+    .flash-hide-error p:first-of-type {
+      display: inline-block; }
+  .flash-hide-error a {
+    color: #6a0f13;
+    text-decoration: underline; }
+    .flash-hide-error a:focus, .flash-hide-error a:hover {
+      color: #110203; }
+
 .header-container {
   position: relative;
   overflow: hidden;
+  min-height: 20em;
   height: 100vh;
   width: 100%; }
 
@@ -321,7 +347,8 @@ body {
 .resume-link-header {
   position: absolute;
   top: 1em;
-  right: 1em; }
+  right: 1em;
+  color: white; }
   .resume-link-header a {
     color: white;
     text-decoration: underline; }
@@ -580,10 +607,16 @@ body {
 .p-slides-right.open-right {
   left: -100%; }
 
+.old-projects {
+  float: left;
+  width: 100%;
+  text-align: center; }
+
 .contact-container {
   position: relative;
   box-shadow: 0px -3px 5px rgba(153, 153, 153, 0.6);
-  background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png); }
+  background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
+  min-height: 100vh; }
   .contact-container hr:last-child {
     margin-bottom: 0; }
 
@@ -603,8 +636,6 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  -webkit-filter: brightness(100%);
-          filter: brightness(100%);
   z-index: -1; }
 
 .contact-wrap {

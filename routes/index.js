@@ -4,33 +4,42 @@ var nodemailer = require("nodemailer");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log(process.env.TEST_VAR);
+  //console.log(process.env.TEST_VAR);
+  console.log("Main page has been requested.");
   res.render('index');
 });
 
 router.post('/contact', function(req, res, next) {
-  console.log(process.env.TEST_VAR);
-  console.log(req.body);
+  console.log("A contact form has been submitted.");
+  //console.log(process.env.TEST_VAR);
+  //console.log(req.body);
   //console.log(process.env.EMAIL_USERNAME);
   //console.log(process.env.EMAIL_PASSWORD);
 
+  // Validation rules
   req.checkBody('name',
                 'You must enter a name with at least two characters').isLength({ min: 2});
 
-  req.checkBody('email', 'Please enter a valid email').isEmail();
+  req.checkBody('email',
+                'Please enter a valid email').isEmail();
 
-  req.checkBody('subject', 'Please include a subject line that is at least two characters.').isLength({ min: 2});
+  req.checkBody('subject',
+                'Please include a subject line that is at least two characters.').isLength({ min: 2});
 
-  req.checkBody('reason', 'Please include at least a few sentences about why you wish to contact me.'). isLength({ min: 2});
+  req.checkBody('reason',
+                'Please include at least a few sentences about why you wish to contact me.'). isLength({ min: 2});
 
+  // Check for validation errors
   var validationErrors = req.validationErrors();
   if(validationErrors) {
-    console.log("Validation Errors!");
-    console.log(validationErrors);
-    res.send(400, { "Validation Errors" : validationErrors});
+    // If errors were found
+    console.log("Validation failed!");
+    // Send back 400 status (error) and pass validation errors the the "Validation errors" key
+    res.status(400).send({ "Validation errors" : validationErrors});
     return;
   } else {
     // No validation errors
+    console.log("Validation passed.");
 
     // Config mail account
     var smtpConfig = {
@@ -64,17 +73,20 @@ router.post('/contact', function(req, res, next) {
     transporter.sendMail(mailOptions, function(error, info){
         if(error){
             // Send error code to browser to halt processing
-            req.send(400);
             return console.log(error);
+            res.status(400).send({'Email error' : 'There was a problem with sending the email. Chances are I am already aware of it and am working on it.'});
+            return;
         }
         // Message sent, continue with processing
         console.log('Message sent: ' + info.response);
     });
     // Everything was good, send OK to browser
-    res.send(200);
+    res.sendStatus(200);
+    return;
   }
+  // End contact route
 
-  
+
 
 });
 

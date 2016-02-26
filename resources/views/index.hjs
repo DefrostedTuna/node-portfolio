@@ -14,7 +14,7 @@
 <div class="header-container"> <!-- Header -->
   <div class="header-bg"></div>
   <div class="header-wrap">
-    <span class="resume-link-header wow bounceInDown"><a href="#">Link to resume (PDF)</a></span>
+    <span class="resume-link-header wow bounceInDown"><a href="https://github.com/DefrostedTuna">Github profile</a> | <a href="#">Link to resume (PDF)</a></span>
     <div class="header-nq clearfix">
       <h1>Rick Bennett</h1>
       <p>"Code like whoever ends up maintaining your code is a serial killer who knows where you live."</p>
@@ -136,6 +136,13 @@
         </div>
         <span class="project-arrow-right wow fadeIn"><i id="project-3-arrow" class="fa fa-3x fa-arrow-circle-right"></i></span>
       </div> <!-- Image Upload -->
+      <div class="old-projects wow fadeIn">
+        <h5>My early days</h5>
+        <p>
+          I have a couple of older projects that are no longer hosted. <br />
+          The code however can be found on my <a href="https://github.com/DefrostedTuna">Github</a> profile.
+        </p>
+      </div>
     </div>
   </div> <!-- Projects -->
   <div class="contact-container"> <!-- Contact -->
@@ -172,7 +179,11 @@
     </div>
     <div class="footer-wrap wow fadeIn">
       <hr>
-      <p>&copy 2016 Rick Bennett</p>
+      <p>
+        Copyright &copy 2016 Rick Bennett <br />
+        All Rights Reserved.
+      </p>
+      <!--<p>&copy 2016 Rick Bennett</p>-->
       <a href="https://github.com/DefrostedTuna">Me @ Github</a> |
       <a href="#">Resume (PDF)</a> |
       <a href="">Back to the top</a>

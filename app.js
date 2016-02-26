@@ -36,7 +36,9 @@ app.use(require('node-sass-middleware')({
   sourceMap: true
 }));
 
-app.use('/portfolio', routes);
+app.set('json spaces',0);
+
+app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -13,9 +13,6 @@ body
 .wow
   animation-duration: 1.5s
 
-.everything-else
-  display: none
-
 .form-error
   display: inline-block
   color: $ut-color-red
@@ -41,6 +38,10 @@ body
   padding: 1em
   margin: auto
 
+.flash-hide-error
+  +ut-flash(error)
+  padding: 1em
+  margin: auto
 
 @import "partials/header"
 @import "partials/about"
