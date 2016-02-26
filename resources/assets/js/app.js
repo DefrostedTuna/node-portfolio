@@ -26,7 +26,7 @@ $(function () {
     data.subject  = $('#form-subject').val().trim();
     data.reason    = $('#form-reason').val().trim();
     $.ajax({
-        url : "/contact",
+        url : "http://uptilt.io/portfolio/contact",
         type: "POST",
         data: JSON.stringify(data),
         processData: false,
