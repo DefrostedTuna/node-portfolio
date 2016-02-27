@@ -1,12 +1,18 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require("nodemailer");
+var path = require('path');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   //console.log(process.env.TEST_VAR);
   console.log("Main page has been requested.");
   res.render('index');
+});
+
+router.get('/resume', function(req, res, next) {
+  console.log('Requesting PDF resume.');
+  res.sendFile(path.join(__dirname, '../public/assets/files/', 'Resume(2016).pdf'));
 });
 
 router.post('/contact', function(req, res, next) {

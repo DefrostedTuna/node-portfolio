@@ -14,7 +14,7 @@
 <div class="header-container"> <!-- Header -->
   <div class="header-bg"></div>
   <div class="header-wrap">
-    <span class="resume-link-header wow bounceInDown"><a href="https://github.com/DefrostedTuna">Github profile</a> | <a href="#">Link to resume (PDF)</a></span>
+    <span class="resume-link-header wow bounceInDown"><a href="https://github.com/DefrostedTuna">Github profile</a> | <a href="http://uptilt.io/portfolio/resume">Link to resume (PDF)</a></span>
     <div class="header-nq clearfix">
       <h1>Rick Bennett</h1>
       <p>"Code like whoever ends up maintaining your code is a serial killer who knows where you live."</p>
@@ -183,9 +183,8 @@
         Copyright &copy 2016 Rick Bennett <br />
         All Rights Reserved.
       </p>
-      <!--<p>&copy 2016 Rick Bennett</p>-->
       <a href="https://github.com/DefrostedTuna">Me @ Github</a> |
-      <a href="#">Resume (PDF)</a> |
+      <a href="http://uptilt.io/portfolio/resume">Resume (PDF)</a> |
       <a href="#">Back to the top</a>
     </div>
   </div> <!-- Contact -->
