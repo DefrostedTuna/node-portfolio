@@ -106,13 +106,13 @@
         <div class="p-slide-wrap">
           <div class="p-slides p-slides-right clearfix">
             <div class="project-slide">
-              <h4>Baseline Styleset</h4>
-              <p>I got super tired of having to style everything from scratch with every new project. I didn't particularly want to use a hefty front end framework like Bootstrap or Foundation as most of the things wouldn't be used anyway. Solution? Make my own minimalistic styleset that I can use with new projects easily. Best part? It's modular. Use what you want, the rest is only part of the code if you include it.</p>
+              <h4>CSS Starter Kit</h4>
+              <p>I got super tired of having to style everything from scratch with every new project. I didn't particularly want to use a hefty front end framework like Bootstrap or Foundation as most of the tools wouldn't be used anyway. Solution? Make my own minimalistic styleset based on SASS that I can use with new projects easily. Best part? It's lightweight, modular, and configurable via a single file.</p>
             </div>
             <div class="project-slide">
               <div>
                 <a href="https://github.com/DefrostedTuna/css-base-style" target="_blank"><img src="/assets/uptilt.io/img/github.svg" alt="Data" /></a>
-                <a href="http://demo.uptilt.io/css-base" target="_blank"><img src="/assets/uptilt.io/img/link.svg" alt="Data" /></a>
+                <a href="http://demo.uptilt.io/css-starter-kit" target="_blank"><img src="/assets/uptilt.io/img/link.svg" alt="Data" /></a>
               </div>
             </div>
           </div>
