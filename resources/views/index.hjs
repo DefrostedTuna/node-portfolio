@@ -47,7 +47,6 @@
             <div class="wow fadeInRight">
               <h4>Minimalism is my thing</h4>
               <p>Nobody likes clutter, myself included. What you are looking for should be exactly where you expect it, without unnecessary distractions.</p>
-              <!--<p>I'm not a fan of clutter, so most everything I make is going to be straight to the point with everything needed.</p>-->
             </div>
           </div>
         </div>
@@ -55,7 +54,7 @@
           <div class="detail-block detail-block-right">
             <img src="/assets/uptilt.io/img/modular.svg" alt="Learn" class="wow bounceInRight" />
             <div class="wow fadeInLeft">
-              <h4>Modular Everything</h4>
+              <h4>Everything should be modular</h4>
               <p>If a feature change breaks your application, you're doing it wrong. <br /> A modular application is a stable one.</p>
             </div>
           </div>
@@ -95,7 +94,7 @@
               </div>
             </div>
             <div class="project-slide">
-              <h4>FFXIV based homepage replacement</h4>
+              <h4><a href="http://uptilt.io/landing" target="_blank">FFXIV based homepage replacement</a></h4>
               <p>This was a personal project of mine that I ended up expanding on for a couple of friends. Originally it was written in PHP using Laravel 5 (go figure right?). Shorty after getting a demo up, a friend had mentioned something about NodeJS. I figured this was a good project to try out NodeJS with, and have since converted it over while slowly adding things to it. This is currently my personal homepage.</p>
             </div>
           </div>
@@ -106,7 +105,7 @@
         <div class="p-slide-wrap">
           <div class="p-slides p-slides-right clearfix">
             <div class="project-slide">
-              <h4>CSS Starter Kit</h4>
+              <h4><a href="http://demo.uptilt.io/css-starter-kit" target="_blank">CSS Starter Kit</a></h4>
               <p>I got super tired of having to style everything from scratch with every new project. I didn't particularly want to use a hefty front end framework like Bootstrap or Foundation as most of the tools wouldn't be used anyway. Solution? Make my own minimalistic styleset based on SASS that I can use with new projects easily. Best part? It's lightweight, modular, and configurable via a single file.</p>
             </div>
             <div class="project-slide">
@@ -129,7 +128,7 @@
               </div>
             </div>
             <div class="project-slide">
-              <h4>Image upload</h4>
+              <h4><a href="http://demo.uptilt.io/image" target="_blank">Image upload</a></h4>
               <p>I made a pure PHP image upload feature a long time ago when I decided to try and make a blog. However, it was fairly clunky since it was my first attempt. This is an attempt to give image upload functionality a shot with Javascript/JQuery alongside PHP. More of a proof of concept to try what I've learned, although I may decide to try and expand on this at some point.</p>
             </div>
           </div>

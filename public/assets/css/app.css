@@ -584,6 +584,8 @@ body {
     width: 50%;
     height: 100%;
     float: left; }
+    .p-slides .project-slide h4 a {
+      color: inherit; }
     .p-slides .project-slide div {
       position: absolute;
       top: 50%;
