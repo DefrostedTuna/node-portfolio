@@ -89,7 +89,7 @@
       <h1 class="wow fadeIn">Where's the proof?</h1>
       <div class="project-container wow slideInLeft left-side"> <!-- FFXIV -->
         <div class="p-slide-wrap">
-          <img class="bg-image" src="/assets/uptilt.io/img/homepage-rep.png"/>
+          <img class="bg-image" src="/assets/uptilt.io/img/homepage-rep-mask.png"/>
           <div class="p-slides p-slides-left clearfix">
             <div class="project-slide">
               <div>
@@ -107,7 +107,7 @@
       </div> <!-- FFXIV -->
       <div class="project-container wow slideInRight right-side"> <!-- CSS Baseline -->
         <div class="p-slide-wrap">
-          <img class="bg-image" src="/assets/uptilt.io/img/starter-kit.png"/>
+          <img class="bg-image" src="/assets/uptilt.io/img/starter-kit-mask.png"/>
           <div class="p-slides p-slides-right clearfix">
             <div class="project-slide">
               <h4><a href="http://demo.uptilt.io/css-starter-kit" target="_blank">CSS Starter Kit</a></h4>
@@ -125,7 +125,7 @@
       </div> <!-- CSS Baseline -->
       <div class="project-container wow slideInLeft left-side"> <!-- Image Upload -->
         <div class="p-slide-wrap">
-          <img class="bg-image" src="/assets/uptilt.io/img/image-upload.png"/>
+          <img class="bg-image" src="/assets/uptilt.io/img/image-upload-mask.png"/>
           <div class="p-slides p-slides-left clearfix">
             <div class="project-slide">
               <div>
