@@ -14,9 +14,10 @@
 <div class="header-container"> <!-- Header -->
   <div class="header-bg"></div>
   <div class="header-wrap">
-    <span class="resume-link-header wow bounceInDown"><a href="https://github.com/DefrostedTuna">Github profile</a> | <a href="http://uptilt.io/portfolio/resume">Link to resume (PDF)</a></span>
+    <span class="resume-link-header wow fadeInDown"><a href="https://github.com/DefrostedTuna">Github profile</a> | <a href="http://uptilt.io/portfolio/resume">Resume (PDF)</a></span>
     <div class="header-nq clearfix">
       <h1>Rick Bennett</h1>
+      <h5 class="tagline">Developer | Minimalist | Perfectionist</h5>
       <p>"Code like whoever ends up maintaining your code is a serial killer who knows where you live."</p>
     </div>
   </div>
@@ -67,7 +68,7 @@
             <div class="wow fadeInRight">
               <h4>A lifetime of growth</h4>
               <p>I'm always up for a challenge, that's the best part about what I do. <br />
-              There's always something new to learn.</p>
+              With the way technology works there's always something new to learn.</p>
             </div>
           </div>
         </div>
@@ -85,7 +86,7 @@
   <div class="projects-container clearfix"> <!-- Projects -->
     <hr />
     <div class="projects-wrap">
-      <h1 class="wow fadeIn">Some of the stuff I've done</h1>
+      <h1 class="wow fadeIn">Where's the proof?</h1>
       <div class="project-container wow slideInLeft left-side"> <!-- FFXIV -->
         <div class="p-slide-wrap">
           <div class="p-slides p-slides-left clearfix">

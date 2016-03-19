@@ -38,12 +38,12 @@
   transform: translateY(-50%)
   text-align: center
   color: $ut-color-white
-  padding: 0 1.5em
+  padding: 0 0.5em
   transition: top ease 1s
   h1
+    font-weight: normal
     margin-top: 0
     opacity: 0
-    margin-bottom: 1em
     color: $ut-color-white
     text-shadow: 2px 2px 2px rgba($ut-color-dark-gray, 0.75)
     transition: opacity ease 2s
@@ -54,6 +54,36 @@
     max-width: $ut-paragraph-width-readable / 1.5
     text-shadow: 2px 2px 2px rgba($ut-color-dark-gray, 0.75)
     transition: left ease 1s
+    margin-top: 0.5em
+
+  .tagline
+    font-family: $ut-font-open-sans
+    overflow: hidden
+    text-align: center
+    margin: 0.5em auto
+    margin-bottom: 1.5em
+    max-width: 40em
+    color: $ut-color-white
+    text-shadow: 2px 2px 2px rgba($ut-color-dark-gray, 0.75)
+    background: rgba($ut-color-dark-gray, 0.75)
+    padding: 0.5em
+    border-radius: 2px
+    &::before,
+    &::after
+      background-color: $ut-color-white
+      content: ""
+      display: inline-block
+      height: 2px
+      position: relative
+      vertical-align: middle
+      width: 50%
+    &::before
+      right: 0.5em
+      margin-left: -50%
+    &::after
+      left: 0.5em
+      margin-right: -50%
+
 
 .header-nav
   text-align: right
