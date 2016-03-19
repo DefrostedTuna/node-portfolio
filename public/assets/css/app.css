@@ -425,6 +425,12 @@ body {
   border-radius: 50%;
   box-shadow: 2px 2px 5px #999999; }
 
+#gravitar {
+  width: 10em; }
+
+#stevek {
+  float: right; }
+
 .detail-block {
   padding: 1em 2em;
   max-width: 40em; }
@@ -584,8 +590,10 @@ body {
     width: 50%;
     height: 100%;
     float: left; }
-    .p-slides .project-slide h4 a {
-      color: inherit; }
+    .p-slides .project-slide h4 {
+      text-decoration: underline; }
+      .p-slides .project-slide h4 a {
+        color: inherit; }
     .p-slides .project-slide div {
       position: absolute;
       top: 50%;

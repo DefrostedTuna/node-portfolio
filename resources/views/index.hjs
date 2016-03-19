@@ -24,20 +24,20 @@
 <div class="content-wrapper">
   <div class="about-me-container"> <!-- About Me -->
     <div class="about-me-wrap">
-      <h1 class="wow fadeIn">The guy behind the name</h1>
-      <div class="detail-intro wow bounceInDown">
-        <img src="/assets/uptilt.io/img/ninja.svg" alt="Ninja" />
+      <h1 class="wow fadeIn">Wait... Who?</h1>
+      <div class="detail-intro wow fadeIn">
+        <img id="gravitar" src="/assets/uptilt.io/img/gravitar.png" alt="Ninja" />
         <h4>That's me.</h4>
         <p><strong>Let's keep it simple.</strong><br /> I'm just a guy who likes to make things.<br />
-        <small>(I'm not really a ninja by the way)</small></p>
+        <!--<small>(I'm not really a ninja by the way)</small></p>-->
       </div>
       <div class="about-float-wrap clearfix">
         <div class="clearfix">
           <div class="detail-block detail-block-right">
             <img src="/assets/uptilt.io/img/data2.svg" alt="Data" class="wow bounceInRight" />
             <div class="wow fadeInLeft">
-              <h4>I like working with data</h4>
-              <p>Give me something to sift through and I'll have it organized in no time. <br /> I never get tired of analyzing stuff.</p>
+              <h4>I love working with data</h4>
+              <p>Give me something to sift through and I'll have it organized in no time. <br /> This stuff is like a super fun puzzle to me.</p>
             </div>
           </div>
         </div>
@@ -46,7 +46,9 @@
             <img src="/assets/uptilt.io/img/simple2.svg" alt="Simple" class="wow bounceInLeft" />
             <div class="wow fadeInRight">
               <h4>Minimalism is my thing</h4>
-              <p>Nobody likes clutter, myself included. What you are looking for should be exactly where you expect it, without unnecessary distractions.</p>
+              <!--<p>Nobody likes clutter, myself included. What you are looking for should be exactly where you expect it, without unnecessary distractions.</p>-->
+              <p>Minimalism is about designing <em>smarter</em>, more <em>effecient</em> applications.<br />
+                "Nothing important should ever be more than two clicks away." <br /><span id="stevek">- Steve Krug</span></p>
             </div>
           </div>
         </div>
@@ -63,7 +65,7 @@
           <div class="detail-block detail-block-left">
             <img src="/assets/uptilt.io/img/learn.svg" alt="Learn" class="wow bounceInLeft" />
             <div class="wow fadeInRight">
-              <h4>Room to grow</h4>
+              <h4>A lifetime of growth</h4>
               <p>I'm always up for a challenge, that's the best part about what I do. <br />
               There's always something new to learn.</p>
             </div>
