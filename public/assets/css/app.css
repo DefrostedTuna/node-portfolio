@@ -239,7 +239,7 @@ select {
   display: block !important; }
 
 body {
-  background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/furley_bg.png); }
+  background: url("../img/body-bg.png"); }
 
 .clearfix:after {
   content: " ";
@@ -563,7 +563,7 @@ body {
 .project-arrow-right {
   position: absolute;
   top: 50%;
-  right: -15%;
+  right: -35px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
   .project-arrow-right:hover {
@@ -575,7 +575,7 @@ body {
 .project-arrow-left {
   position: absolute;
   top: 50%;
-  left: -15%;
+  left: -35px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
   .project-arrow-left:hover {
@@ -604,9 +604,21 @@ body {
   color: #25B7D3; }
 
 .p-slide-wrap {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.33em;
+  padding: 0.5em; }
+  .p-slide-wrap .bg-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(-10deg) scale(1.5);
+            transform: translateY(-50%) translateX(-50%) rotate(-10deg) scale(1.5);
+    -webkit-filter: brightness(0.8) opacity(0.65) blur(2px);
+            filter: brightness(0.8) opacity(0.65) blur(2px); }
 
 .p-slides {
+  text-shadow: 2px 2px 2px white;
   position: relative;
   left: 0;
   min-width: 200%;
@@ -618,6 +630,8 @@ body {
     height: 100%;
     float: left; }
     .p-slides .project-slide h4 {
+      font-weight: normal;
+      text-shadow: 2px 2px 2px rgba(221, 221, 221, 0.75);
       text-decoration: underline; }
       .p-slides .project-slide h4 a {
         color: inherit; }
@@ -636,13 +650,13 @@ body {
   left: -50%; }
 
 .p-slides-left.open-left {
-  left: 100%; }
+  left: 75%; }
 
 .p-slides-right div {
   left: 50%; }
 
 .p-slides-right.open-right {
-  left: -100%; }
+  left: -75%; }
 
 .old-projects {
   float: left;
